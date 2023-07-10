@@ -35,7 +35,7 @@
             <h3 class="ms-3 my-3 text-justify text-start text-light">With an intuitive interface and exceptional service, we're here to make your gaming dreams a reality. </h3>
             <h3 class="ms-3 my-3 text-justify text-start text-light">Experience the thrill of Engine_ and embrace unforgettable adventures.</h3>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5  pt-5">
             <img src="/img/About.gif" class="img-fluid mt-5 ms-5 " alt="Zombie Attack" id="about_img"/>
           </div>
         </div>
