@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Elianto";
-    src: url("/fonts/Elianto-Regular.ttf");
+    font-family: "Anurati";
+    src: url("/fonts/Anurati-regular.otf");
 }
 
 @font-face {
@@ -12,7 +12,11 @@
 html,
 body {
     font-family: monospace;
-    background-color: rgb(25, 25, 26);
+    background: linear-gradient(
+        179.4deg,
+        rgb(12, 20, 69) -16.9%,
+        rgb(71, 30, 84) 119.9%
+    );
 }
 
 /* Buttons */
@@ -112,8 +116,9 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(158, 24, 147);
     font-family: monospace;
+    text-shadow: #a759ff;
 }
 
 .overlay {
