@@ -7,7 +7,10 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="hero">
+    @include("layouts/navbar")
+    <!-- Hero Banner -->
+    <section>
+        <div class="hero">
         <div class="overlay" id="overlay"></div>
         <img src="/img/HeroBanner.gif" id="hero" />
         <div class="content" id="content">
@@ -18,13 +21,17 @@
                     </div>
                     <div class="col-lg-12 col-12 mt-4">
                         <!-- <a class="btn btn-light" href="/">SHOP NOW!</a> -->
-                        <button>Game On!</button>
+                        <button>PRESS START!</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
+    
 
+<!--About  -->
+<section id="About">
     <div class="container">
         <div class="row text-light">
           <div class="col-lg-6">
@@ -40,6 +47,8 @@
           </div>
         </div>
     </div>
+</section>
+    
 </body>
 
 </html>
