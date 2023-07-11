@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row mx-5 mt-5">
                     <div class="col-lg-6 col-10">
-                        <h1 class="fw-bolder display-1">Welcome to Engine_</h1>
+                        <h1 class="fw-bolder display-1">WELCOME TO ENGINE_</h1>
                     </div>
                     <div class="col-lg-12 col-12 mt-4">
                         <!-- <a class="btn btn-light" href="/">SHOP NOW!</a> -->
