@@ -1,26 +1,40 @@
 @font-face {
-    font-family: "Elianto";
-    src: url("/fonts/Elianto-Regular.otf");
+    font-family: "Minecraft";
+    src: url("/fonts/Minecraft.ttf");
 }
 
 @font-face {
-    font-family: "Moki";
-    src: url("/fonts/Moki-Mono.otf");
+    font-family: "Vanilla";
+    src: url("/fonts/VanillaWave-eZ8mn.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
 
 /* Main */
 html,
 body {
-    font-family: monospace;
+    font-family: "Vanilla";
+    font-size: 110%;
     background: linear-gradient(
         109.6deg,
         rgb(6, 2, 2) 52.4%,
-        rgb(137, 30, 47) 98.8%
+        rgb(185, 25, 52) 98.8%
     );
+    background-repeat: repeat;
+}
+
+.line {
+  height: 1px;
+  background: rgb(255, 255, 255);
+  width: 50%
 }
 
 /* Buttons */
-button {
+.button {
     --border: 5px;
     --slant: 0.7em;
     --color: #a759ff;
@@ -50,7 +64,7 @@ button {
     transition: color var(--t, 0.3s), background-size 0.3s;
 }
 
-button:focus-visible {
+.button:focus-visible {
     outline-offset: calc(-1 * var(--border));
     outline: var(--border) solid #000c;
     clip-path: none;
@@ -64,7 +78,7 @@ button:active {
     --t: 0.2s 0.1s;
 }
 
-button:active {
+.button:active {
     --s: #0005;
     transition: none;
 }
@@ -116,9 +130,10 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Elianto";
+    font-family: "Vanilla";
     text-shadow: 3px 2px 8px rgba(148, 69, 158, 0.6);
-    color: #e9e9e9;
+    color: #ffffff;
+    font-size: 100%;
 }
 
 .overlay {
@@ -126,26 +141,60 @@ button:active {
     top: 0;
     left: 0;
     width: 100%;
-    height: 107vh;
+    height: 108vh;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* About */
 #about_img {
     position: absolute;
-    width: 45%;
-    border: 11px solid #5e24ec;
+    width: 43%;
+    /* border: 11px solid #6932f5; */
     border-radius: 28px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.about-content {
+    font-family: "Montserrat";
 }
 
 /* Navbar */
 .navbar {
     position: sticky;
-    font-family: monospace;
-    padding: 7px;
+    font-family: "Vanilla";
+    padding: 6px;
     padding-left: 20px;
     justify-content: center;
     text-align: center;
     z-index: 9999;
     font-size: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-custom {
+ position: sticky;
+ background: rgb(19, 17, 17);
+  background-size: cover;
+}
+
+/* Carousel */
+.carousel-inner {
+   /* border: 11px solid #6932f5; */
+   width: 1000px;
+    border-radius: 28px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Cards */
+.card {
+   height: 85%;
+   font-size: 20px;
+   margin-top: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
+.card-body {
+    height: auto;
+    width: 100%;;
+    font-family: "Montserrat";
+    border-radius: 28px;
 }
