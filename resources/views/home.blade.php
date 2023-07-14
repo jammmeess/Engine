@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    @include("layouts/navbar")
-    <!-- Hero Banner -->
     <section>
+        @include("layouts/navbar")
+        <!-- Hero Banner -->
         @include('landing/hero')
         <!--About  -->
         @include('landing/about')
