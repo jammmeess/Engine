@@ -1,3 +1,4 @@
+@include('layouts/app')
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand mx-4" href="/"><img src="/img/logo/logo_white_main.png" style="width: 100px" /></a>
@@ -32,7 +33,7 @@
         </li>
         </li>
         @else
-        <a href="/login"><button type="button" class="button px-2" style="width: 180px; height: 40px; font-size: 15px" data-bs-toggle="modal" data-bs-target="#sign_in">
+        <a href="/login"><button type="button" class="btn mx-3" style="width: 180px; height: 40px; font-size: 15px" data-bs-toggle="modal" data-bs-target="#sign_in">
             Log In / Sign Up
           </button></a>
         @endif
