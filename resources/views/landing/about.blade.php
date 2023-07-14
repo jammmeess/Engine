@@ -11,18 +11,18 @@
         </div>
 
         <div class="col-lg-6  d-none d-sm-block pt-1">
-            <img src="/img/landing/About.gif" class="img-fluid mt-5 ms-5 " alt="Zombie Attack" id="about_img" />
+            <img src="/img/landing/About.gif" class="img-fluid mt-5 ms-3 " alt="Zombie Attack" id="about_img" />
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-12 d-none d-sm-block">
+        <div class="col-lg-6 d-none d-sm-block">
             <p class="ms-3 my-4 text-justify text-start text-light about-content">Discover a curated collection of games, join a vibrant community, and unleash your passion. With an intuitive interface and exceptional service, we're here to make your gaming dreams a reality. </p>
             <p class="ms-3 my-3 text-justify text-start text-light about-content">Experience the thrill of Engine_ and embrace unforgettable adventures.</p>
         </div>
     </div>
 
-<!-- Responsive -->
+    <!-- Responsive -->
     <div class="row text-light">
         <div class="col-12 d-block d-sm-none justify-text-center text-center">
             <h3 class="mt-5 display-3 text-light d-flex justify-content-center">About</h3>
@@ -39,7 +39,7 @@
             <p class="ms-3  text-light about-content">Experience the thrill of Engine_ and embrace unforgettable adventures.</p>
         </div>
 
-        <div class="col-12 d-block d-sm-none  d-flex justify-content-center mb-5 pb-5">
+        <div class="col-12 d-block d-sm-none  d-flex justify-content-center ">
             <img src="/img/landing/About.gif" class="img-fluid" style="width: 80%" alt="Zombie Attack" id="about_img" />
         </div>
     </div>
