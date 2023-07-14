@@ -1,11 +1,11 @@
-        <div class="container-fluid px-5" id="Games">
-            <div class="col-lg-12 col-12 d-none d-sm-block">
+        <div class="container-fluid px-5 py-5 mt-5" id="Games">
+            <div class="col-lg-12 d-none d-sm-block">
                 <h3 class="display-3 text-light d-flex justify-content-center">Our Games</h3>
                 <div class="line mb-5 d-flex justify-content-center"></div>
             </div>
             <!-- Normal Screen -->
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-12 ps-5 pt-5  d-none d-sm-block">
+                <div class="col-lg-12 ps-5 pt-1  d-none d-sm-block">
                     <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,7 +78,7 @@
 
                     <div class="col-lg-12  d-none d-sm-block">
                         <div class="d-flex justify-content-center mb-5">
-                            <button class="button text-center" style="font-family: Montserrat">Shop Now</button>
+                            <button class="btn text-center" style="font-family: Helmet">Go to Store</button>
                         </div>
                     </div>
 
@@ -165,7 +165,7 @@
 
                 <div class="col-12 d-block d-sm-none">
                     <div class="d-flex justify-content-center my-4">
-                        <button class="button text-center" style="font-family: Montserrat">Shop Now</button>
+                        <button class="btn text-center" style="font-family: Helmet">Go to Store</button>
                     </div>
                 </div>
 
