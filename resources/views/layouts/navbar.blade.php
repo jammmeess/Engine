@@ -8,32 +8,32 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#About">About</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="/#About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Games">Games</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="/#Games">Games</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Faqs">Faqs</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="/#Faqs">Faqs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Faqs">Store</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="#Store">Store</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Support">Support</a>
+        <li class=" nav-item">
+          <a class="nav-link  text-light" aria-current="page" href="#Support">Support</a>
         </li>
         @if (Session::has('user_id'))
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Library">Library</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="#Library">Library</a>
         </li>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light ms-2" aria-current="page" href="#Profile">Profile</a>
+          <a class="nav-link  text-light ms-2" aria-current="page" href="#Profile">Profile</a>
         </li>
         </li>
         @else
-        <a href="/login"><button type="button" class="btn mx-3" style="width: 180px; height: 40px; font-size: 15px" data-bs-toggle="modal" data-bs-target="#sign_in">
+        <a href="/login"><button type="button" class="btn mx-3">
             Log In / Sign Up
           </button></a>
         @endif
