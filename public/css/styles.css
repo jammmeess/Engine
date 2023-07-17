@@ -427,7 +427,9 @@ body {
     left: 0;
      width: 100%;
     height: 100vh;
-    border-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+
 box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
 }
@@ -467,7 +469,7 @@ box-shadow:  -7px 7px 16px #0e080f,
 
 #about_img {
     position: absolute;
-    width: 45%;
+    width: 46%;
     /* border: 11px solid #6932f5; */
     border-radius: 28px;
 box-shadow:  -7px 7px 16px #0e080f,
@@ -516,7 +518,7 @@ background-color: transparent !important;
 /* Carousel */
 .carousel-inner {
    /* border: 11px solid #6932f5; */
-   width: 800px;
+   width: 700px;
     border-radius: 28px;
 box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
@@ -552,7 +554,8 @@ ul {
 .footer-section {
   background: #151414;
 margin-top: auto;
-border-radius: 28px;
+border-top-left-radius: 28px;
+border-top-right-radius: 28px;
 box-shadow:  26px 26px 52px #231325,
              -26px -26px 52px #231325;
  padding: 10px;
@@ -719,11 +722,39 @@ box-shadow:  26px 26px 52px #231325,
 #login-bg {
   background-color: rgb(255, 255, 255);
   border-radius: 28px; 
-  width: 100%;
+  width: 120%;
   height: 70%;
+  box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;;
+}
+
+/* Register */
+
+#reg-bg {
+  background-color: rgb(255, 255, 255);
+  border-radius: 28px; 
+  width: 85%;
+  height: 110%;
   box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
 }
 
+#reg-bg-responsive {
+  background-color: rgb(255, 255, 255);
+  border-radius: 28px; 
+  width: 85%;
+  height: 130%;
+  box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;
+}
 
+/*Success  */
+#success {
+   background-color: rgb(255, 255, 255);
+  border-radius: 28px; 
+  width: 50%;
+  box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;
+   color: black;
+}
 
