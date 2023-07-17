@@ -8,28 +8,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="/#About">About</a>
+          <a class="nav-link  text-light ms-2" href="/#About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="/#Games">Games</a>
+          <a class="nav-link  text-light ms-2" href="/#Games">Games</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="/#Faqs">Faqs</a>
+          <a class="nav-link  text-light ms-2" href="/#Faqs">Faqs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="#Store">Store</a>
+          <a class="nav-link  text-light ms-2" href="#Store">Store</a>
         </li>
         <li class=" nav-item">
-          <a class="nav-link  text-light" aria-current="page" href="#Support">Support</a>
+          <a class="nav-link  text-light" href="#Support">Support</a>
         </li>
         @if (Session::has('user_id'))
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="#Library">Library</a>
+          <a class="nav-link  text-light ms-2" href="#Library">Library</a>
         </li>
         </li>
-        <li class="nav-item">
-          <a class="nav-link  text-light ms-2" aria-current="page" href="#Profile">Profile</a>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown">
+            <img src="/img/icons/profile.png" style="width: 25px">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Go to Profile</a></li>
+            <li><a class="dropdown-item" href="/logout">Logout</a></li>
         </li>
         </li>
         @else
