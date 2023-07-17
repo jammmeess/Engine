@@ -2,7 +2,6 @@
 
 <head>
     @include("layouts/head")
-    <script src="/js/welcome.js"></script>
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Home</title>
 </head>
