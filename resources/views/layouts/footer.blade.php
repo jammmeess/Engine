@@ -26,9 +26,9 @@
                             <h3>Links</h3>
                         </div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#About">About</a></li>
-                            <li><a href="#Games">Games</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/#About">About</a></li>
+                            <li><a href="/#Games">Games</a></li>
                             <li><a href="#">Faqs</a></li>
                             <li><a href="#">Support</a></li>
                             <li><a href="#">Store</a></li>
