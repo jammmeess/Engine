@@ -50,10 +50,40 @@ class UserController extends Controller
         return view('success');
     }
 
-    // LOGIN//
+    // LOGIN LOGOUT//
     public function showLogin()
     {
         return view('login');
+    }
+
+    public function login(Request $request)
+    {
+        $user = User::where('email', "=", $request->email)->first();
+        if ($user) {
+            if (Hash::check($request->password, $user->password)) {
+                $request->session()->put('first_name', $user->first_name);
+                $request->session()->put('last_name', $user->last_name);
+                $request->session()->put('email', $user->email);
+                $request->session()->put('role', $user->role);
+                $request->session()->put('user_id', $user->user_id);
+                if (Session::get('role') == 'user') {
+                    return redirect('/userhome');
+                }
+            } else {
+                return redirect('/login')->with('fail', 'Incorrect password');
+            }
+        } else {
+            return redirect('/login')->with('fail', 'Email does not exist');
+        }
+    }
+
+    public function logout()
+    {
+        if (Session::has('user_id')) {
+            Session::flush();
+        }
+
+        return redirect('login')->with('success', 'You have been logged out!');
     }
 
     // HOME//
@@ -61,5 +91,19 @@ class UserController extends Controller
     public function showHome()
     {
         return view('home');
+    }
+
+    public function showProfile()
+    {
+        if (Session::has('user_id')) {
+            $u = User::query()
+                ->select('*')
+                ->where("user_id", "=", Session::get("user_id"))
+                ->get()
+                ->first();
+            return view('userhome', compact('u'));
+        } else {
+            abort(401);
+        }
     }
 }
