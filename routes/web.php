@@ -7,11 +7,12 @@ use App\Http\Controllers\UserController;
 Route::get('/', [UserController::class, 'showHome']);
 
 Route::get('/login', [UserController::class, 'showLogin']);
+Route::post('/login', [UserController::class, 'login']);
+
+Route::get('/userhome', [UserController::class, 'showProfile']);
 
 //////////// USER ///////////
-
-
-//////////// ADMIN ///////////
 Route::get('/login/register', [UserController::class, 'showRegister']);
 Route::post('/login/register/success', [UserController::class, 'register']);
 Route::get('/login/register/success', [UserController::class, 'showRegisterSuccess']);
+Route::get('/logout', [UserController::class, 'logout']);
