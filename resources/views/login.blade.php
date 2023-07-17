@@ -29,10 +29,10 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                         </div>
-                        <a href="/"><button type="submit" class="btn mt-3">Cancel</button></a>
+                        <a href="/" type="button" class="btn mt-3">Cancel</></a>
                         <button type="submit" class="btn mt-3">Submit</button>
                     </form>
-                    <p>Not yet a member?</p> <a><button type="submit" class="btn mb-5">Register Here</button></a>
+                    <p>Not yet a member?</p> <a href="/login/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
 
                 <!-- Responsive -->
@@ -55,10 +55,10 @@
                         <a href="/" type="submit" class="btn mt-3">Cancel</a>
                         <button type="submit" class="btn mt-3">Submit</button>
                     </form>
-                    <p>Not yet a member?</p> <a><button type="submit" class="btn mb-5">Register Here</button></a>
+                    <p>Not yet a member?</p> <a href="/login/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
 
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-sm-block my-5 me-3">
                     <img src="/img/landing/symmetra.gif" id="login_img" style="height: 90%; border: 10px solid">
                 </div>
 
