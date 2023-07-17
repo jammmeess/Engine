@@ -11,6 +11,8 @@
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner img-fluid" style="width: 100%">
                             <div class="carousel-item active">
@@ -20,7 +22,13 @@
                                 <img src="/img/landing/rdr2.gif" class="d-block w-100" alt="Red Dead Redemption 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/landing/spider-man.gif" class="d-block w-100" alt="New World">
+                                <img src="/img/landing/spider-man.gif" class="d-block w-100" alt="Spider-Man">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/landing/stray.gif" class="d-block w-100" alt="Stray">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/landing/goose.gif" class="d-block w-100" alt="Untitled Goose Game">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -99,6 +107,8 @@
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
                     <div class="carousel-inner img-fluid" style="width: 100%">
                         <div class="carousel-item active">
@@ -108,7 +118,13 @@
                             <img src="/img/landing/rdr2.gif" class="d-block w-100" alt="Red Dead Redemption 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/landing/spider-man.gif" class="d-block w-100" alt="New World">
+                            <img src="/img/landing/spider-man.gif" class="d-block w-100" alt="Spider-Man">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/landing/stray.gif" class="d-block w-100" alt="Stray">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/landing/goose.gif" class="d-block w-100" alt="Untitled Goose Game">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
