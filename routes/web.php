@@ -9,7 +9,7 @@ Route::get('/', [UserController::class, 'showHome']);
 Route::get('/login', [UserController::class, 'showLogin']);
 Route::post('/login', [UserController::class, 'login']);
 
-Route::get('/userhome', [UserController::class, 'showProfile']);
+Route::get('/userhome', [UserController::class, 'showUserHome']);
 
 //////////// USER ///////////
 Route::get('/register', [UserController::class, 'showRegister']);
@@ -21,3 +21,6 @@ Route::get('/support', [UserController::class, 'showSupport']);
 Route::get('/support/forgot_password', [UserController::class, 'showForgotpw']);
 
 Route::get('/usersupport', [UserController::class, 'showUserSupport']);
+
+Route::get('/profile', [UserController::class, 'showProfile']);
+Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoProfile']);
