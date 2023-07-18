@@ -7,15 +7,16 @@
 </head>
 
 <body>
-    @include("layouts/errors")
+
     @include("layouts/navbar")
+    @include("layouts/errors")
 
     <section>
-        <div class="container">
+        <div class="container text-light">
             <div class="row" id="login-bg">
 
                 <div class="col-lg-6  d-none d-sm-block mx-5 mt-2 ">
-                    <img src="/img/logo/logo_black_main.png" class="img-fluid my-3" style="width: 70%">
+                    <img src="/img/logo/logo_white_main.png" class="img-fluid my-3" style="width: 70%">
                     <form action="/login" method="POST">
                         @csrf
                         <div class="form-group">
@@ -38,7 +39,7 @@
 
                 <!-- Responsive -->
                 <div class="col-11 d-block d-sm-none mx-3 mt-2 ">
-                    <img src="/img/logo/logo_black_main.png" class="img-fluid my-3" style="width: 70%">
+                    <img src="/img/logo/logo_white_main.png" class="img-fluid my-3" style="width: 70%">
                     <form action="/login" method="POST">
                         @csrf
                         <div class="form-group">
@@ -60,7 +61,7 @@
                 </div>
 
                 <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-sm-block my-5 me-3">
-                    <img src="/img/landing/symmetra.gif" id="login_img" style="height: 90%; border: 10px solid">
+                    <img src="/img/landing/symmetra.gif" id="login_img" style="height: 105%; border: 10px solid black">
                 </div>
 
             </div>
