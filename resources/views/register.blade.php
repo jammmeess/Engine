@@ -59,8 +59,9 @@
                         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
 
-                    <a href="/" class="btn mx-3 mt-3">Cancel</a>
                     <button type="submit" class="btn mt-3 mx-3">Submit</button>
+                    <a href="/" class="btn mx-3 mt-3">Cancel</a>
+
                 </form>
             </div>
 
@@ -122,8 +123,9 @@
                         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
 
-                    <a href="/" class="btn  mt-3 me-2 col-5">Cancel</a>
                     <button type="submit" class="btn mt-3  col-5">Submit</button>
+                    <a href="/" class="btn  mt-3 me-2 col-5">Cancel</a>
+
                 </form>
             </div>
 
