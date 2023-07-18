@@ -34,7 +34,6 @@
         </div>
     </div>
 
-    <div class="line d-fex justify-content-start"></div>
     <div class="row px-5">
         <div class="col-lg-12 col-10 text-light">
             @include('layouts/contact')
