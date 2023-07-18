@@ -93,7 +93,7 @@ class UserController extends Controller
         return view('home');
     }
 
-    public function showProfile()
+    public function showUserHome()
     {
         if (Session::has('user_id')) {
             $u = User::query()
@@ -131,5 +131,36 @@ class UserController extends Controller
     public function showForgotpw()
     {
         return view('forgotpw');
+    }
+
+    // PROFILE//
+    public function showProfile()
+    {
+        if (Session::has('user_id')) {
+            $u = User::query()
+                ->select('*')
+                ->where("user_id", "=", Session::get("user_id"))
+                ->get()
+                ->first();
+            return view('profile', compact('u'));
+        } else {
+            abort(401);
+        }
+    }
+
+    public function uploadPhotoProfile(Request $request, string $id)
+    {
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHiu') . $file->getClientOriginalName();
+            $file->move(public_path('img/user_profiles'), $filename);
+
+            $user = User::where('user_id', '=', $id)
+            ->update([
+                'image' => $filename
+            ]);
+
+            return redirect('/profile')->with('success', 'Profile picture successfully updated!');
+        }
     }
 }
