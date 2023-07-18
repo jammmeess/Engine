@@ -15,6 +15,8 @@
         @include('landing/about')
         <!-- Games -->
         @include('landing/games')
+        <!-- Faqs -->
+        @include('landing/faqs')
         <!-- footer -->
         @include("layouts/footer")
     </section>
