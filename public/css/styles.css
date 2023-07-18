@@ -758,3 +758,14 @@ box-shadow:  26px 26px 52px #231325,
    color: black;
 }
 
+/* FAQS */
+#faqs{
+   height: 100vh;
+}
+
+.accordion-item {
+    box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;
+   color: black;
+}
+
