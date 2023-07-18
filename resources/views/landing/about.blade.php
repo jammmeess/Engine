@@ -10,8 +10,8 @@
             <p class="ms-3 my-3 text-justify text-start text-light about-content">Engine_ emerged from a simple idea and has transformed into an extraordinary gaming ecommerce company. </p>
         </div>
 
-        <div class="col-lg-6  d-none d-sm-block pt-1">
-            <img src="/img/landing/About.gif" class="img-fluid mt-5 ms-3 " alt="Zombie Attack" id="about_img" />
+        <div class="col-lg-6 d-flex align-items-center d-none d-sm-block pt-1 mt-5">
+            <img src="/img/landing/About.gif" class="img-fluid mt-5 ms-3 " alt="Adventure Awaits" id="about_img" />
         </div>
     </div>
 
@@ -40,7 +40,7 @@
         </div>
 
         <div class="col-12 d-block d-sm-none  d-flex justify-content-center ">
-            <img src="/img/landing/About.gif" class="img-fluid" style="width: 80%" alt="Zombie Attack" id="about_img" />
+            <img src="/img/landing/About.gif" class="img-fluid" style="width: 80%" alt="Adventure Awaits" id="about_img" />
         </div>
     </div>
 </div>
