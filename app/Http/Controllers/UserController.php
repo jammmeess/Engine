@@ -42,7 +42,7 @@ class UserController extends Controller
         $user->role = "user";
         $user->save();
 
-        return redirect('/login/register/success');
+        return redirect('/register/success');
     }
 
     public function showRegisterSuccess()
@@ -105,5 +105,11 @@ class UserController extends Controller
         } else {
             abort(401);
         }
+    }
+
+    // SUPPORT//
+    public function showSupport()
+    {
+        return view('support');
     }
 }
