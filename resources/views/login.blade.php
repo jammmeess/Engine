@@ -2,12 +2,11 @@
 
 <head>
     @include("layouts/head")
-    <script src="/js/welcome.js"></script>
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Log In</title>
 </head>
 
-<body> 
+<body>
     @include("layouts/errors")
     @include("layouts/navbar")
 
@@ -34,7 +33,7 @@
                         <a href="/" type="button" class="btn mt-3">Cancel</></a>
                         <button type="submit" class="btn mt-3">Log In</button>
                     </form>
-                    <p>Not yet a member?</p> <a href="/login/register"><button type="button" class="btn mb-5">Register Here</button></a>
+                    <p>Not yet a member?</p> <a href="/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
 
                 <!-- Responsive -->
@@ -57,7 +56,7 @@
                         <a href="/" type="submit" class="btn mt-3">Cancel</a>
                         <button type="submit" class="btn mt-3">Log In</button>
                     </form>
-                    <p>Not yet a member?</p> <a href="/login/register"><button type="button" class="btn mb-5">Register Here</button></a>
+                    <p>Not yet a member?</p> <a href="/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
 
                 <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-sm-block my-5 me-3">
