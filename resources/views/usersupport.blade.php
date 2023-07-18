@@ -12,10 +12,10 @@
         <div class="row">
             <div class="col-lg-12 col-10 text-light">
                 <h2>Engine_ Support</h2>
-                <h3>What do you need help with?</h3>
+                <h3>Hi, {{$u->username}}! What do you need help with?</h3>
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col-lg-12 col-10 text-light mt-5">
                 <label for="issue" class="mb-2">Please describe the issue.</label>
