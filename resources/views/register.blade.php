@@ -11,7 +11,7 @@
     @include("layouts/navbar")
 
     <div class="container px-5 py-5 my-5 d-none d-sm-block" id="reg-bg">
-        <div class="row d-flex justify-content-start align-items-center text-dark" style="line-height: 40px">
+        <div class="row d-flex justify-content-start align-items-center text-light" style="line-height: 40px">
             <div class=" col-lg-12 mx-1 my-4 d-none d-sm-block ">
                 <h1>Your adventure is about to begin!</h1>
             </div>
@@ -66,7 +66,7 @@
 
 
             <div class="col-lg-6 mb-4 d-none d-sm-block">
-                <img src="/img/landing/register.gif" class="img-fluid" style="height: 650px; border: 10px solid">
+                <img src="/img/landing/register.gif" class="img-fluid" style="height: 650px; border: 10px solid black">
             </div>
 
         </div>
@@ -74,7 +74,7 @@
 
     <!-- Responsive -->
     <div class="container px-3 py-3 my-5 d-block d-sm-none" id="reg-bg-responsive">
-        <div class="row d-flex justify-content-start align-items-center text-dark" style="line-height: 40px">
+        <div class="row d-flex justify-content-start align-items-center text-light" style="line-height: 40px">
             <div class=" col-12 mx-1 my-4 d-block d-sm-none">
                 <h1>Your adventure is about to begin!</h1>
             </div>
