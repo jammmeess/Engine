@@ -18,7 +18,7 @@
 
             <div class=" col-lg-6 d-none d-sm-block">
                 <h2>Create your account.</h2>
-                <form action="/login/register/success" method="POST">
+                <form action="/register/success" method="POST">
                     @csrf
                     <div class=" form-group col-lg-10">
                         <label for="email">Email: </label>
@@ -81,7 +81,7 @@
 
             <div class=" col-12 d-block d-sm-none">
                 <h2>Create your account.</h2>
-                <form action="/login/register/success" method="POST">
+                <form action="/register/success" method="POST">
                     @csrf
                     <div class=" form-group col-12">
                         <label for="email">Email: </label>
