@@ -112,4 +112,12 @@ class UserController extends Controller
     {
         return view('support');
     }
+    
+    
+    // RESET PASSWORD//
+public function showForgotpw(){
+    return view('forgotpw');
 }
+}
+
+
