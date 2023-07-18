@@ -33,10 +33,10 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <span class="dropdown-item">Welcome!</span>
+              <span class="mb-1 ps-3">Welcome!</span>
             </li>
             <div class="dropdown-divider"></div>
-            <li><a class="dropdown-item" href="#">Go to Profile</a></li>
+            <li><a class="dropdown-item" href="/profile">Go to Profile</a></li>
             <li><a class="dropdown-item" href="/logout">Logout</a></li>
         </li>
         @else
