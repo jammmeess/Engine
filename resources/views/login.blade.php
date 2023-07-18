@@ -31,8 +31,9 @@
                             <input type="checkbox" class="form-check-input">
                             <label class="form-check-label" >Remember Me</label>
                         </div> -->
-                        <a href="/" type="button" class="btn mt-3">Cancel</></a>
                         <button type="submit" class="btn mt-3">Log In</button>
+                        <a href="/" type="button" class="btn mt-3">Cancel</></a>
+
                     </form>
                     <p>Not yet a member?</p> <a href="/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
@@ -54,8 +55,9 @@
                             <input type="checkbox" class="form-check-input" >
                             <label class="form-check-label">Remember Me</label>
                         </div> -->
-                        <a href="/" type="submit" class="btn mt-3">Cancel</a>
                         <button type="submit" class="btn mt-3">Log In</button>
+                        <a href="/" type="submit" class="btn mt-3">Cancel</a>
+
                     </form>
                     <p>Not yet a member?</p> <a href="/register"><button type="button" class="btn mb-5">Register Here</button></a>
                 </div>
