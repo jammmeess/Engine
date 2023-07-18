@@ -112,12 +112,24 @@ class UserController extends Controller
     {
         return view('support');
     }
-    
-    
+
+    public function showUserSupport()
+    {
+        if (Session::has('user_id')) {
+            $u = User::query()
+                ->select('*')
+                ->where("user_id", "=", Session::get("user_id"))
+                ->get()
+                ->first();
+            return view('usersupport', compact('u'));
+        } else {
+            abort(401);
+        }
+    }
+
     // RESET PASSWORD//
-public function showForgotpw(){
-    return view('forgotpw');
+    public function showForgotpw()
+    {
+        return view('forgotpw');
+    }
 }
-}
-
-
