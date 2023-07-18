@@ -25,6 +25,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-12 text-light">
+                <p>Having trouble logging in?</p>
+                <a class="btn" href="/support/forgot_password">Click Here</a>
+            </div>
+        </div>
     </div>
 
     @include('layouts/footer')

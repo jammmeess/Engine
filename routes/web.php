@@ -18,3 +18,4 @@ Route::get('/register/success', [UserController::class, 'showRegisterSuccess']);
 Route::get('/logout', [UserController::class, 'logout']);
 
 Route::get('/support', [UserController::class, 'showSupport']);
+Route::get('/support/forgot_password', [UserController::class, 'showForgotpw']);
