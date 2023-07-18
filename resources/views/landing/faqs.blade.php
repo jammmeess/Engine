@@ -6,11 +6,11 @@
         <div class="accordion px-5 py-5">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         1. What is Engine_?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqs">
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#faqs">
                     <div class="accordion-body">
                         Engine_ is an online gaming e-commerce website that offers a wide range of gaming products, including downloadable video games, consoles, accessories, and merchandise. We aim to provide gamers with a convenient platform to explore, purchase, and enjoy the latest gaming experiences.
                     </div>
