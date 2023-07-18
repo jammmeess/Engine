@@ -15,7 +15,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  text-light ms-2" href="/#Faqs">Faqs</a>
+          <a class="nav-link  text-light ms-2" href="/#Faqs">FAQS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link  text-light ms-2" href="#Store">Store</a>
@@ -24,6 +24,9 @@
           <a class="nav-link  text-light" href="#Support">Support</a>
         </li>
         @if (Session::has('user_id'))
+        <li class=" nav-item">
+          <a class="nav-link  text-light" href="#Support">Support</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link  text-light ms-2" href="#Library">Library</a>
         </li>
