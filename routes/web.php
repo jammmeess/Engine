@@ -12,7 +12,9 @@ Route::post('/login', [UserController::class, 'login']);
 Route::get('/userhome', [UserController::class, 'showProfile']);
 
 //////////// USER ///////////
-Route::get('/login/register', [UserController::class, 'showRegister']);
-Route::post('/login/register/success', [UserController::class, 'register']);
-Route::get('/login/register/success', [UserController::class, 'showRegisterSuccess']);
+Route::get('/register', [UserController::class, 'showRegister']);
+Route::post('/register/success', [UserController::class, 'register']);
+Route::get('/register/success', [UserController::class, 'showRegisterSuccess']);
 Route::get('/logout', [UserController::class, 'logout']);
+
+Route::get('/support', [UserController::class, 'showSupport']);
