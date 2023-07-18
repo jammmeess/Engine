@@ -22,20 +22,22 @@
         </li>
         @if (Session::has('user_id'))
         <li class=" nav-item">
-          <a class="nav-link  text-light" href="#Support">Support</a>
+          <a class="nav-link  text-light" href="/usersupport">Support</a>
         </li>
         <li class="nav-item">
           <a class="nav-link  text-light ms-2" href="#Library">Library</a>
-        </li>
         </li>
         <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown">
             <img src="/img/icons/profile.png" style="width: 25px">
           </a>
           <ul class="dropdown-menu">
+            <li>
+              <span class="dropdown-item">Welcome!</span>
+            </li>
+            <div class="dropdown-divider"></div>
             <li><a class="dropdown-item" href="#">Go to Profile</a></li>
             <li><a class="dropdown-item" href="/logout">Logout</a></li>
-        </li>
         </li>
         @else
         <li class=" nav-item">
