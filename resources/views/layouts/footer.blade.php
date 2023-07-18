@@ -30,9 +30,14 @@
                             <li><a href="/#About">About</a></li>
                             <li><a href="/#Games">Games</a></li>
                             <li><a href="#">Faqs</a></li>
-                            <li><a href="#">Support</a></li>
                             <li><a href="#">Store</a></li>
                             <li><a href="#">Latest News</a></li>
+                            @if (Session::has('user_id'))
+                            <li><a href="#">Support</a></li>
+                            @else
+                            <li><a href="#">Support</a></li>
+                            @endif
+
                         </ul>
                     </div>
                 </div>
@@ -70,7 +75,11 @@
                             <li><a href="#">Terms</a></li>
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Policy</a></li>
+                            @if (Session::has('user_id'))
                             <li><a href="#">Support</a></li>
+                            @else
+                            <li><a href="#">Support</a></li>
+                            @endif
                         </ul>
                     </div>
                 </div>
