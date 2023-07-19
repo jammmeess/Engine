@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-sm-block my-5 me-3">
-                    <img src="/img/landing/symmetra.gif" id="login_img" style="height: 105%; border: 10px solid black">
+                    <img src="/img/landing/symmetra.gif" id="login_img" class="img-fluid" style="height: 105%; width: 100%; border: 10px solid black">
                 </div>
 
             </div>
