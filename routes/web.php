@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\PurchaseController;
 
 ////////////PUBLIC ///////////
 Route::get('/', [UserController::class, 'showHome']);
@@ -29,3 +30,6 @@ Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoPro
 Route::get('/store', [GameController::class, "showStore"]);
 
 Route::get('/userstore', [GameController::class, "showUserStore"]);
+
+Route::get('/userstore', [PurchaseController::class, 'placePurchase']);
+Route::get('/usercart', [PurchaseController::class, 'showCart']);
