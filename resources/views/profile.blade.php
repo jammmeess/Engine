@@ -2,11 +2,13 @@
 
 <head>
     @include("layouts/head")
+    
     <title>Profile</title>
 </head>
 
 <body>
     @include('layouts/navbar')
+    @include("layouts/errors")
     <div class="container d-none d-sm-block">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-12 mt-5">
