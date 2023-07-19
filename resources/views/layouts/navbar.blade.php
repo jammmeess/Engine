@@ -29,11 +29,14 @@
         </li>
         <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown">
-            <img src="/img/icons/profile.png" style="width: 25px">
+            <img src="img/user_profiles/{{$u->image}}" style="width: 20px; height: 20px; border-radius: 28%; border: 1px solid white">
+            {{$u->username}}
           </a>
           <ul class="dropdown-menu">
             <li>
-              <span class="mb-1 ps-3">Welcome!</span>
+              <span class="mb-1 ps-3">Welcome, </span>
+              <span class="mb-1 ps-3">{{$u->username}}!</span>
+
             </li>
             <div class="dropdown-divider"></div>
             <li><a class="dropdown-item" href="/profile">Go to Profile</a></li>
