@@ -2,10 +2,6 @@
     <h3 id="contact_us" class="col-lg-12 col-12 pt-5 text-start ">
         Contact Us.
     </h3>
-    <h5>
-        Please feel free to contact us if you need any further information on
-        Library.
-    </h5>
     <div class="row d-flex justify-content-start align-items-center">
 
         <div class="col-lg-5 col-12 mt-2 pt-2">
