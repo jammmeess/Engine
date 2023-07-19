@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\GameController;
 
 ////////////PUBLIC ///////////
 Route::get('/', [UserController::class, 'showHome']);
@@ -24,3 +25,7 @@ Route::get('/usersupport', [UserController::class, 'showUserSupport']);
 
 Route::get('/profile', [UserController::class, 'showProfile']);
 Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoProfile']);
+
+Route::get('/store', [GameController::class, "showStore"]);
+
+Route::get('/userstore', [GameController::class, "showUserStore"]);
