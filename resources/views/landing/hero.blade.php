@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="col-lg-12 d-none d-sm-block ">
-                    <button class="btn text-start" style="font-family: Helmet">Press Start</button>
+                    <a href="/store" class="btn text-center" style="font-family: Helmet">Press Start</a>
                 </div>
 
                 <!-- Responsive -->
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="col-12 d-block d-sm-none">
-                    <button class="btn text-center" style="font-family: Helmet">Press Start</button>
+                    <a href="/store" class="btn text-center" style="font-family: Helmet">Press Start</a>
                 </div>
 
             </div>
