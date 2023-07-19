@@ -86,7 +86,7 @@
 
                     <div class="col-lg-12  d-none d-sm-block">
                         <div class="d-flex justify-content-center mb-5">
-                            <button class="btn text-center" style="font-family: Helmet">Go to Store</button>
+                            <a href="/store" class="btn text-center" style="font-family: Helmet">Go to Store</a>
                         </div>
                     </div>
 
@@ -181,7 +181,7 @@
 
                 <div class="col-12 d-block d-sm-none">
                     <div class="d-flex justify-content-center my-4">
-                        <button class="btn text-center" style="font-family: Helmet">Go to Store</button>
+                        <a href="/store" class="btn text-center" style="font-family: Helmet">Go to Store</a>
                     </div>
                 </div>
 
