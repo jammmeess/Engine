@@ -32,15 +32,15 @@
             <img src="img/user_profiles/{{$u->image}}" style="width: 20px; height: 20px; border-radius: 28%; border: 1px solid white">
             {{$u->username}}
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" style="background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);">
             <li>
-              <span class="mb-1 ps-3">Welcome, </span>
-              <span class="mb-1 ps-3">{{$u->username}}!</span>
+              <h5 class="mb-1 ps-3 text-light">Welcome, </h5>
+              <h6 class="mb-1 ps-3 text-light"><b><i>{{$u->username}}!</i></b></h6>
 
             </li>
             <div class="dropdown-divider"></div>
-            <li><a class="dropdown-item" href="/profile">Go to Profile</a></li>
-            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            <li><a class="category text-light ms-3" href="/profile">Go to Profile</a></li>
+            <li><a class="category text-light ms-3" href="/logout">Logout</a></li>
         </li>
         @else
         <a class="navbar-brand mx-4" href="/"><img src="/img/logo/logo_white_main.png" style="width: 100px" /></a>
