@@ -67,7 +67,7 @@ class UserController extends Controller
                 $request->session()->put('role', $user->role);
                 $request->session()->put('user_id', $user->user_id);
                 if (Session::get('role') == 'user') {
-                    return redirect('/userhome');
+                    return redirect('/userstore');
                 }
             } else {
                 return redirect('/login')->with('fail', 'Incorrect password');
@@ -156,9 +156,9 @@ class UserController extends Controller
             $file->move(public_path('img/user_profiles'), $filename);
 
             $user = User::where('user_id', '=', $id)
-            ->update([
-                'image' => $filename
-            ]);
+                ->update([
+                    'image' => $filename
+                ]);
 
             return redirect('/profile')->with('success', 'Profile picture successfully updated!');
         }
