@@ -7,9 +7,13 @@
 
 <body>
     @include('layouts/navbar')
+    @include('layouts/errors')
+
+
     <div class="container">
         <div class="row">
-            <h3 class="text-light mb-5">Welcome, {{$u->username}}!</h3>
+            <h3 class="text-light mb-3">Welcome, {{$u->username}}!</h3>
+            <a href="/usercart" class="btn d-flex col-lg-3 mb-5">View Cart</a>
             <div class="col-lg-12 d-flex">
                 <div class="col-lg-3 text-light d-none d-sm-block">
                     <h5>Categories</h5>
@@ -88,7 +92,7 @@
                     <p class="price my-3">
                         ₱{{$g->price}}
                     </p>
-                    <a class="btn mt-3 d-flex" type="button" href="#">
+                    <a class="btn mt-3 d-flex" type="submit" href="/userstore">
                         Add to cart
                     </a>
 
