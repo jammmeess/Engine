@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                     <div class="footer-widget">
-                        <div class="footer-widget-heading">
+                        <div class="footer-widget-heading mt-3">
                             <h3>Links</h3>
                         </div>
                         <ul>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                     <div class="footer-widget">
-                        <div class="footer-widget-heading">
+                        <div class="footer-widget-heading mt-3">
                             <h3>Subscribe</h3>
                         </div>
                         <div class="footer-text mb-25">
