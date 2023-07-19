@@ -10,11 +10,11 @@
     <section>
         @include("layouts/navbar")
         <!-- Hero Banner -->
-        @include('landing/hero')
+        @include('landing/userhero')
         <!--About  -->
         @include('landing/about')
         <!-- Games -->
-        @include('landing/games')
+        @include('landing/usergames')
         <!-- Faqs -->
         @include('landing/faqs')
         <!-- footer -->
