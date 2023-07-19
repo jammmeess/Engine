@@ -15,7 +15,7 @@
                 <h3>Hi, {{$u->username}}! What do you need help with?</h3>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-lg-12 col-10 text-light mt-5">
                 <label for="issue" class="mb-2">Please describe the issue.</label>
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="row py-5 ps-5">
-        <div class="col-lg-12 col-10 text-light">
+        <div class="col-lg-12 col-10 text-light mt-5 pt-5">
             @include('layouts/contact')
         </div>
     </div>
