@@ -8,7 +8,10 @@
 <body>
     @include('layouts/navbar')
     @include('layouts/errors')
-
+    <div class="overlay-store" id="overlay"></div>
+    <div class="hero-store col-lg-12 col-12">
+        <img src="/img/landing/About1.gif" id="hero-store" />
+    </div>
 
     <div class="container">
         <div class="row">
@@ -21,13 +24,16 @@
                         <li><a class="category" href="#">Action</a></li>
                         <li><a class="category" href="#"> Adventure</a></li>
                         <li><a class="category" href="#">MMORPG</a></li>
+                        <li><a class="category" href="#">Multiplayer</a></li>
+                        <li><a class="category" href="#">RPG</a></li>
+                        <li><a class="category" href="#">Singleplayer</a></li>
                         <li><a class="category" href="#">Tactical Shooter</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-9">
                     <h5 class="text-light">Featured Games of the Week</h5>
-                    <div id="store_carousel" class="carousel slide" data-bs-ride="true" data-bs-interval="3500">
+                    <div id="store_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#store_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#store_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -66,44 +72,45 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-12 ">
+            <div class="col-lg-12">
                 <h3 class="mt-5 text-light d-flex justify-content-center">More Games</h3>
                 <div class="line mb-5"></div>
             </div>
 
-            @foreach($games as $g)
-            <div class="col-lg-4  col-11">
-                <div class="card-store pe-2me-3 my-4">
-                    <div class="infos">
-                        <div class="image">
-                            <img src="img/games/{{$g->image_1}}" class="card-img-top-game" alt="{{$g->game_name}}">
-                        </div>
-                        <div class="info">
-                            <div>
-                                <p class="name">
-                                    {{$g->game_name}}
-                                </p>
-                                <p class="function">
-                                    {{$g->developer}}
-                                </p>
+            <form action="/userstore" method="POST">
+                @csrf
+                <div class="row">
+                    @foreach($games as $g)
+                    <div class="col-lg-4 col-11 ">
+                        <div class="card-store pe-1 me-3 my-4">
+                            <div class="infos">
+                                <div class="image">
+                                    <img src="img/games/{{$g->image_1}}" class="card-img-top-game" alt="{{$g->game_name}}">
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <p class="name">
+                                            {{$g->game_name}}
+                                        </p>
+                                        <p class="function">
+                                            {{$g->developer}}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            <p class="price my-3">
+                                <i>₱ {{$g->price}}</i>
+                            </p>
+                            <button class="btn" type="submit">
+                                Add to cart
+                            </button>
+
                         </div>
                     </div>
-                    <p class="price my-3">
-                        ₱{{$g->price}}
-                    </p>
-                    <a class="btn mt-3 d-flex" type="submit" href="/userstore">
-                        Add to cart
-                    </a>
-
-                </div>
-            </div>
-            @endforeach
-
-
-
+                    @endforeach
+            </form>
         </div>
-
+    </div>
     </div>
     @include('layouts/footer')
 </body>
