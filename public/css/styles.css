@@ -422,15 +422,15 @@ body {
 
 /* Hero Banner */
 #hero {
-  position: relative;
+  position: static;
    top: 0;
-    left: 0;
-     width: 100%;
-    height: 100vh;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
-
-box-shadow:  -7px 7px 16px #0e080f,
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   border-bottom-left-radius: 28px;
+   border-bottom-right-radius: 28px;
+   box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
 }
 
@@ -447,7 +447,6 @@ box-shadow:  -7px 7px 16px #0e080f,
     text-shadow: 3px 2px 8px rgba(148, 69, 158, 0.6);
     color: #ffffff;
     font-size: 100%;
-    z-index: 100;
 }
 
 .overlay {
@@ -457,8 +456,11 @@ box-shadow:  -7px 7px 16px #0e080f,
     width: 100%;
     height: 110vh;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
-    z-index: 100;
+   border-bottom-left-radius: 28px;
+   border-bottom-right-radius: 28px;
+   box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;
+    /* z-index: 100; */
 }
 
 /* About */
@@ -852,6 +854,38 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 /* Store */
+.hero-store{
+ position: static;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 30%;
+   object-fit: cover;
+   
+}
+
+#hero-store{
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
+   border-bottom-left-radius: 28px;
+   border-bottom-right-radius: 28px;
+   box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b;
+}
+
+.overlay-store{
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background-color: rgba(0, 0, 0, 0.6);
+   border-bottom-left-radius: 27px;
+   border-bottom-right-radius: 27px;
+    /* z-index: 100; */
+}
+
 #categories {
    list-style-type: none;
 }
@@ -893,10 +927,11 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 .card-store {
-  width: 105%;
+  width: 95%;
+  height:70%;
   border-radius: 1rem;
   margin-right: 40px;
- background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+ background: rgb(26, 25, 25);
   padding: 1rem;
   box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
@@ -924,7 +959,7 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 .info {
-  height: 7rem;
+  height: 6rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -932,7 +967,7 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 .name {
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
 }
