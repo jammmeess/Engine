@@ -7,6 +7,11 @@
 
 <body>
     @include('layouts/navbar')
+    <div class="overlay-store" id="overlay"></div>
+    <div class="hero-store col-lg-12 col-12">
+        <img src="/img/landing/About1.gif" id="hero-store"/>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex">
@@ -22,7 +27,7 @@
 
                 <div class="col-lg-9">
                     <h5 class="text-light">Featured Games of the Week</h5>
-                    <div id="store_carousel" class="carousel slide" data-bs-ride="true" data-bs-interval="3500">
+                    <div id="store_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#store_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#store_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,7 +73,7 @@
 
             @foreach($games as $g)
             <div class="col-lg-4  col-11">
-                <div class="card-store pe-2me-3 my-4">
+                <div class="card-store pe-2 me-3 my-4">
                     <div class="infos">
                         <div class="image">
                             <img src="img/games/{{$g->image_1}}" class="card-img-top-game" alt="{{$g->game_name}}">
@@ -87,7 +92,7 @@
                     <p class="price my-3">
                         ₱{{$g->price}}
                     </p>
-                    <a class="btn mt-3 d-flex" type="button" href="/login">
+                    <a class="btn mt-3" type="button" href="/login">
                         Add to cart
                     </a>
 
