@@ -1,6 +1,6 @@
 @include('layouts/app')
 <nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container-fluid">
+  <div class="container-fluid"#id="navbar">
     @if(Session::has('user_id'))
     <a class="navbar-brand mx-4" href="/userhome"><img src="/img/logo/logo_white_main.png" style="width: 100px" /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,9 +24,9 @@
         <li class=" nav-item">
           <a class="nav-link  text-light" href="/usersupport">Support</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link  text-light ms-2" href="#Library">Library</a>
-        </li>
+        </li> -->
         <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown">
             <img src="img/user_profiles/{{$u->image}}" style="width: 20px; height: 20px; border-radius: 28%; border: 1px solid white">
@@ -40,6 +40,7 @@
             </li>
             <div class="dropdown-divider"></div>
             <li><a class="category text-light ms-3" href="/profile">Go to Profile</a></li>
+            <li><a class="category text-light ms-3" href="#">Go to Game Library</a></li>
             <li><a class="category text-light ms-3" href="/logout">Logout</a></li>
         </li>
         @else
