@@ -8,17 +8,25 @@ class PurchasedGame extends Model
 {
     protected $table = 'purchased_game';
     protected $primaryKey = 'pg_id';
-    public $incrementing = true;
     public $timestamps = false;
-    protected $fillable = ['purchase_id', 'game_id'];
 
-    public function purchase()
+    protected $casts = [
+        'purchase_id' => 'int',
+        'game_id' => 'int',
+    ];
+
+    protected $fillable = [
+        'purchase_id',
+        'game_id',
+    ];
+
+    public function order()
     {
-        return $this->belongsTo(Purchase::class, 'purchase_id');
+        return $this->belongsTo(Order::class, 'order_id');
     }
 
-    public function game()
+    public function product()
     {
-        return $this->belongsTo(Game::class, 'game_id');
+        return $this->belongsTo(Product::class, 'product_id');
     }
 }
