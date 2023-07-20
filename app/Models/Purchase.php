@@ -2,23 +2,25 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+
 
 class Purchase extends Model
 {
     protected $table = 'purchases';
     protected $primaryKey = 'purchase_id';
-    public $incrementing = true;
     public $timestamps = false;
-    protected $fillable = ['time_placed', 'game_id', 'user_id'];
 
-    public function user()
-    {
-        return $this->belongsTo(User::class, 'user_id');
-    }
+    protected $casts = [
+        'time_placed' => 'datetime',
+        'user_id' => 'int',
+        'game_id' => 'int',
+    ];
 
-    public function game()
-    {
-        return $this->belongsTo(Game::class, 'game_id');
-    }
+    protected $fillable = [
+        'time_placed',
+        'user_id',
+        'game_id',
+    ];
 }
