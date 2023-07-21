@@ -27,9 +27,9 @@ Route::get('/usersupport', [UserController::class, 'showUserSupport']);
 Route::get('/profile', [UserController::class, 'showProfile']);
 Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoProfile']);
 
-Route::get('/store', [GameController::class, "showStore"]);
+Route::get('/store', [GameController::class, 'showStore']);
 
-Route::get('/userstore', [GameController::class, "showUserStore"]);
+Route::get('/userstore', [GameController::class, 'showUserStore']);
 Route::post('/userstore', [GameController::class, 'makePurchase']);
 
-Route::get('/usercart', [GameController::class, 'showUserCart']);
+Route::post('/userstore/checkout', [GameController::class, 'placePurchase']);
