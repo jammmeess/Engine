@@ -5,6 +5,15 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Purchase
+ * 
+ * @property int $purcahse_id
+ * @property Carbon $time_placed
+ * @property int $user_id
+ *
+ * @package App\Models
+ */
 
 class Purchase extends Model
 {
@@ -15,12 +24,10 @@ class Purchase extends Model
     protected $casts = [
         'time_placed' => 'datetime',
         'user_id' => 'int',
-        'game_id' => 'int',
     ];
 
     protected $fillable = [
         'time_placed',
         'user_id',
-        'game_id',
     ];
 }
