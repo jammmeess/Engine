@@ -27,6 +27,10 @@ body {
     height: auto;
 }
 
+  h3, h2 {
+         font-family: "Neo-latina";
+        }
+
 .line {
   height: 1px;
   background: rgb(255, 255, 255);
@@ -778,6 +782,10 @@ box-shadow:  26px 26px 52px #231325,
    height: 100vh;
 }
 
+.accordion-header{
+   font-family: "Helmet";
+}
+
 .accordion-item {
     box-shadow:  -7px 7px 16px #0e080f,
              7px -7px 16px #381e3b;
@@ -1016,3 +1024,53 @@ box-shadow:  26px 26px 52px #231325,
   width: 7rem;
    border-radius: 0.5rem;
 }
+
+/* Table */
+ .table-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+              
+        }
+
+        table {
+            width: 110%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            padding:20px;
+            border-radius: 10px;
+        }
+
+        th,
+        td {
+            text-align: center;
+         text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td img {
+            max-width: 80px;
+            border-radius: 10px;
+        }
+
+        .total {
+            font-size: 90px;
+            font-weight: bold;
+        }
+
+
+      /* Animations */
+.fade-in-section {
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 2s ease; 
+  }
+
+  .fade-in-section.fade-in {
+    opacity: 1; 
+    visibility: visible; 
+  }
