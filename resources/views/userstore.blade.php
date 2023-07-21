@@ -10,6 +10,10 @@
                 $new_val = Number($("input.purchase_" + $pid).val()) + 1;
                 if ($new_val < 99) {
                     $("input.purchase_" + $pid).val($new_val);
+                    $(".popup-success-message").fadeIn();
+                    setTimeout(function() {
+                        $(".popup-success-message").fadeOut();
+                    }, 1000);
                 }
             });
         });
@@ -92,8 +96,15 @@
 
             <form action="/userstore" method="POST">
                 @csrf
-                <div class="row">
+                <button type="submit" class="btn btn-primary add_button d-flex me-5">View Cart <img src="/img/icons/cart.png" style="width: 25px" class="ms-2 " /></button>
+                <div class=" row">
+                    <div class="popup-success-message" style="display: none;">
+                        <div class="popup-content">
+                            Game added to cart successfully!
+                        </div>
+                    </div>
                     @foreach($game_list as $gl)
+
                     <div class="col-lg-4 col-11 ">
                         <div class="card-store pe-1 me-3 my-4">
                             <div class="infos">
@@ -109,21 +120,21 @@
                                             {{$gl->developer}}
                                         </p>
                                     </div>
-                                    <input type="hidden" style="width: 50px" class="purchase_{{$gl->game_id}}" name="purchase_{{$gl->game_id}}" value="0">
+                                    <input type="hidden" min="1" max="1" style="width: 50px" class="purchase_{{$gl->game_id}}" name="purchase_{{$gl->game_id}}" value="0">
 
                                 </div>
                             </div>
                             <p class="price my-3">
                                 <i>₱ {{$gl->price}}</i>
                             </p>
-                            <button type="submit" class="btn btn-primary add_button" id="{{$gl->game_id}}">Purchase</button>
+                            <a class="btn btn-primary add_button" id="{{$gl->game_id}}">Add to cart</a>
                         </div>
                     </div>
                     @endforeach
                 </div>
+                {{$game_list->links('pagination::bootstrap-5')}}
             </form>
         </div>
-    </div>
     </div>
     @include('layouts/footer')
 </body>
