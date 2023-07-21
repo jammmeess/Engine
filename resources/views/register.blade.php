@@ -13,11 +13,11 @@
     <div class="container px-5 py-5 my-5 d-none d-sm-block" id="reg-bg">
         <div class="row d-flex justify-content-start align-items-center text-light" style="line-height: 40px">
             <div class=" col-lg-12 mx-1 my-4 d-none d-sm-block ">
-                <h1>Your adventure is about to begin!</h1>
+                <h2>Your adventure is about to begin!</h2>
             </div>
 
             <div class=" col-lg-6 d-none d-sm-block">
-                <h2>Create your account.</h2>
+                <h3>Create your account.</h3>
                 <form action="/register/success" method="POST">
                     @csrf
                     <div class=" form-group col-lg-10">
