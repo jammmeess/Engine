@@ -25,6 +25,7 @@ body {
     );
     background-repeat: repeat;
     height: auto;
+      color: #b3b3b3
 }
 
   h3, h2 {
@@ -1036,9 +1037,10 @@ box-shadow:  26px 26px 52px #231325,
         table {
             width: 110%;
             border-collapse: collapse;
-            margin-bottom: 20px;
-            padding:20px;
             border-radius: 10px;
+             /* box-shadow:  -7px 7px 16px #0e080f,
+             7px -7px 16px #381e3b; */
+             /* background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%); */
         }
 
         th,
@@ -1049,19 +1051,18 @@ box-shadow:  26px 26px 52px #231325,
 
         th {
             background-color: #333;
-            color: #fff;
+            color: #ddd7d7;
+        }
+
+        td {
+         font-size: 20px;
+          color: #ddd7d7;
         }
 
         td img {
             max-width: 80px;
             border-radius: 10px;
         }
-
-        .total {
-            font-size: 90px;
-            font-weight: bold;
-        }
-
 
       /* Animations */
 .fade-in-section {
@@ -1074,3 +1075,23 @@ box-shadow:  26px 26px 52px #231325,
     opacity: 1; 
     visibility: visible; 
   }
+
+  /* Game Popup */
+    .popup-success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  #203c2d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+  }
+
+  .popup-content {
+    text-align: center;
+  }
+
+
