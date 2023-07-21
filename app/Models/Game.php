@@ -29,4 +29,9 @@ class Game extends Model
         'price' => 'float',
         'date_released' => 'date',
     ];
+
+    public function purchases()
+    {
+        return $this->belongsToMany(Purchase::class, 'purchased_game', 'game_id', 'purchase_id');
+    }
 }
