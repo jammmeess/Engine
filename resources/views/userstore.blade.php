@@ -3,20 +3,33 @@
 <head>
     @include("layouts/head")
     <title>Store</title>
+    <script>
+        $(document).ready(function() {
+            $(".add_button").click(function() {
+                $pid = $(this).attr('id');
+                $new_val = Number($("input.purchase_" + $pid).val()) + 1;
+                if ($new_val < 99) {
+                    $("input.purchase_" + $pid).val($new_val);
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
     @include('layouts/navbar')
-    @include('layouts/errors')
+
     <div class="overlay-store" id="overlay"></div>
     <div class="hero-store col-lg-12 col-12">
         <img src="/img/landing/About1.gif" id="hero-store" />
     </div>
+    @include('layouts/errors')
 
     <div class="container">
         <div class="row">
-            <h3 class="text-light mb-3">Welcome, {{$u->username}}!</h3>
-            <a href="/usercart" class="btn d-flex col-lg-3 mb-5">View Cart</a>
+            <h3 class="text-light mb-4">Welcome, {{$u->username}}!</h3>
+            <a href="/userhome" class="btn d-flex col-lg-3 col-5 me-3 mb-5">Home</a>
+            <a href="/profile" class="btn d-flex col-lg-3 col-5 mb-5">Profile</a>
             <div class="col-lg-12 d-flex">
                 <div class="col-lg-3 text-light d-none d-sm-block">
                     <h5>Categories</h5>
@@ -32,7 +45,7 @@
                 </div>
 
                 <div class="col-lg-9">
-                    <h5 class="text-light">Featured Games of the Week</h5>
+                    <h5 class="text-light mb-4">Featured Games of the Week</h5>
                     <div id="store_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#store_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,34 +93,34 @@
             <form action="/userstore" method="POST">
                 @csrf
                 <div class="row">
-                    @foreach($games as $g)
+                    @foreach($game_list as $gl)
                     <div class="col-lg-4 col-11 ">
                         <div class="card-store pe-1 me-3 my-4">
                             <div class="infos">
                                 <div class="image">
-                                    <img src="img/games/{{$g->image_1}}" class="card-img-top-game" alt="{{$g->game_name}}">
+                                    <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
                                 </div>
                                 <div class="info">
                                     <div>
                                         <p class="name">
-                                            {{$g->game_name}}
+                                            {{$gl->game_name}}
                                         </p>
                                         <p class="function">
-                                            {{$g->developer}}
+                                            {{$gl->developer}}
                                         </p>
                                     </div>
+                                    <input type="hidden" style="width: 50px" class="purchase_{{$gl->game_id}}" name="purchase_{{$gl->game_id}}" value="0">
+
                                 </div>
                             </div>
                             <p class="price my-3">
-                                <i>₱ {{$g->price}}</i>
+                                <i>₱ {{$gl->price}}</i>
                             </p>
-                            <button class="btn" type="submit">
-                                Add to cart
-                            </button>
-
+                            <button type="submit" class="btn btn-primary add_button" id="{{$gl->game_id}}">Purchase</button>
                         </div>
                     </div>
                     @endforeach
+                </div>
             </form>
         </div>
     </div>
