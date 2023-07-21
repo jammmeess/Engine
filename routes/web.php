@@ -30,6 +30,6 @@ Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoPro
 Route::get('/store', [GameController::class, "showStore"]);
 
 Route::get('/userstore', [GameController::class, "showUserStore"]);
-Route::get('/usercart', [GameController::class, 'showUserCart']);
 Route::post('/userstore', [GameController::class, 'makePurchase']);
-Route::post('/usercart/checkout', [GameController::class, 'placePurchase']);
+
+Route::get('/usercart', [GameController::class, 'showUserCart']);
