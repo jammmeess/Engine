@@ -71,26 +71,26 @@
                 <div class="line mb-5"></div>
             </div>
 
-            @foreach($games as $g)
+            @foreach($game_list as $gl)
             <div class="col-lg-4  col-11">
                 <div class="card-store pe-2 me-3 my-4">
                     <div class="infos">
                         <div class="image">
-                            <img src="img/games/{{$g->image_1}}" class="card-img-top-game" alt="{{$g->game_name}}">
+                            <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
                         </div>
                         <div class="info">
                             <div>
                                 <p class="name">
-                                    {{$g->game_name}}
+                                    {{$gl->game_name}}
                                 </p>
                                 <p class="function">
-                                    {{$g->developer}}
+                                    {{$gl->developer}}
                                 </p>
                             </div>
                         </div>
                     </div>
                     <p class="price my-3">
-                        ₱{{$g->price}}
+                        ₱{{$gl->price}}
                     </p>
                     <a class="btn mt-3" type="button" href="/login">
                         Add to cart
@@ -99,7 +99,6 @@
             </div>
             @endforeach
         </div>
-        {{$game_list->links('pagination::bootstrap-5')}}
     </div>
     @include('layouts/footer')
 </body>

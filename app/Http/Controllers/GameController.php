@@ -73,12 +73,12 @@ class GameController extends Controller
 
     public function showStore()
     {
-        $games = Game::query()
+        $game_list = Game::query()
             ->select(DB::raw('*'))
-            ->paginate(6);
+            ->get();
 
 
-        return view('store', compact('games'));
+        return view('store', compact('game_list'));
     }
 
     public function showUserStore()
