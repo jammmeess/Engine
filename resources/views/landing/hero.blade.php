@@ -22,7 +22,7 @@
                      <div class="col-12 d-block d-sm-none">
                          <div class="glitch-wrapper-responsive">
                              <h1 class="fw-bolder">
-                                 <div class="glitch-responsive" data-text="IGNITE PASSION_">IGNITE PASSION_</div>
+                                 <div class="glitch-responsive" data-text="IGNITE YOUR PASSION_">IGNITE YOUR PASSION_</div>
                              </h1>
                          </div>
                      </div>
