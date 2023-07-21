@@ -21,7 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'cart',
     ];
+
+    protected $primaryKey = 'user_id';
 
     /**
      * The attributes that should be hidden for serialization.
@@ -42,4 +45,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function purchases()
+    {
+        return $this->hasMany(Purchase::class, 'user_id', 'user_id');
+    }
 }
