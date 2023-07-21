@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePurchasedGameTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -14,13 +14,9 @@ class CreatePurchasedGameTable extends Migration
     public function up()
     {
         Schema::create('purchased_game', function (Blueprint $table) {
-            $table->integer('pg_id');
+            $table->integer('pg_id', true);
             $table->integer('purchase_id');
             $table->integer('game_id');
-
-            // Add foreign key constraints
-            $table->foreign('purchase_id')->references('purchase_id')->on('purchases');
-            $table->foreign('game_id')->references('game_id')->on('games');
         });
     }
 
@@ -33,4 +29,4 @@ class CreatePurchasedGameTable extends Migration
     {
         Schema::dropIfExists('purchased_game');
     }
-}
+};
