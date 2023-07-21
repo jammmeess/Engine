@@ -2,6 +2,7 @@
 
 <head>
     @include("layouts/head")
+    @include('layouts/scroll_fade')
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Welcome</title>
 </head>
