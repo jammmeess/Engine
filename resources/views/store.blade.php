@@ -9,7 +9,7 @@
     @include('layouts/navbar')
     <div class="overlay-store" id="overlay"></div>
     <div class="hero-store col-lg-12 col-12">
-        <img src="/img/landing/About1.gif" id="hero-store"/>
+        <img src="/img/landing/About1.gif" id="hero-store" />
     </div>
 
     <div class="container">
@@ -95,15 +95,11 @@
                     <a class="btn mt-3" type="button" href="/login">
                         Add to cart
                     </a>
-
                 </div>
             </div>
             @endforeach
-
-
-
         </div>
-
+        {{$game_list->links('pagination::bootstrap-5')}}
     </div>
     @include('layouts/footer')
 </body>
