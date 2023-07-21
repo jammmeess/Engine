@@ -4,6 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class PurchasedGame
+ * 
+ * @property int $pg_id
+ * @property int $purchase_id
+ * @property int $game_id
+ *
+ * @package App\Models
+ */
+
 class PurchasedGame extends Model
 {
     protected $table = 'purchased_game';
@@ -19,14 +29,4 @@ class PurchasedGame extends Model
         'purchase_id',
         'game_id',
     ];
-
-    public function order()
-    {
-        return $this->belongsTo(Order::class, 'order_id');
-    }
-
-    public function product()
-    {
-        return $this->belongsTo(Product::class, 'product_id');
-    }
 }
