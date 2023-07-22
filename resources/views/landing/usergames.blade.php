@@ -86,7 +86,7 @@
 
                     <div class="col-lg-12  d-none d-sm-block fade-in-section">
                         <div class="d-flex justify-content-center mb-5">
-                            <a href="/store" class="btn text-center" style="font-family: Helmet">Go to Store</a>
+                            <a href="/userstore" class="btn text-center" style="font-family: Helmet">Go to Store</a>
                         </div>
                     </div>
 
