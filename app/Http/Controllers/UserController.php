@@ -90,12 +90,6 @@ class UserController extends Controller
 
     public function showHome()
     {
-        $u = User::query()
-            ->select('*')
-            ->where("user_id", "=", Session::get("user_id"))
-            ->get()
-            ->first();
-
         return view('home');
     }
 
