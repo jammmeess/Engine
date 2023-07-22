@@ -1,6 +1,6 @@
 @include('layouts/app')
 <nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container-fluid"#id="navbar">
+  <div class="container-fluid" #id="navbar">
     @if(Session::has('user_id'))
     <a class="navbar-brand mx-4" href="/userhome"><img src="/img/logo/logo_white_main.png" style="width: 100px" /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
             </li>
             <div class="dropdown-divider"></div>
             <li><a class="category text-light ms-3" href="/profile">Go to Profile</a></li>
-            <li><a class="category text-light ms-3" href="#">Go to Game Library</a></li>
+            <li><a class="category text-light ms-3" href="/my_library">Go to My Library</a></li>
             <li><a class="category text-light ms-3" href="/logout">Logout</a></li>
         </li>
         @else
