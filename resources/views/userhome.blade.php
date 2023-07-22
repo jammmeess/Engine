@@ -9,6 +9,7 @@
 
 <body>
     <section>
+        <!-- Navbar -->
         @include("layouts/navbar")
         <!-- Hero Banner -->
         @include('landing/userhero')
