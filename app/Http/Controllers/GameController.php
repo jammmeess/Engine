@@ -13,18 +13,56 @@ use Session;
 
 class GameController extends Controller
 {
-    public function placePurchase(Request $request)
+    public function showPurchasedGame(string $id)
     {
         if (Session::has('user_id')) {
-            $purchase = new Purchase;
-            $purchase->user_id = Session::get('user_id');
-            $purchase->save();
+            $u = User::query()
+                ->select('username', 'image')
+                ->where("user_id", "=", Session::get("user_id"))
+                ->get()
+                ->first();
 
+            $game = Game::query()
+                ->select('*')
+                ->where('game_id', '=', $id)
+                ->get();
+        }
+        return view('game_profile_install', compact('u', 'game'));
+    }
+
+    public function showPurchases()
+    {
+        if (Session::has('user_id')) {
             $u = User::query()
                 ->select('*')
                 ->where("user_id", "=", Session::get("user_id"))
                 ->get()
                 ->first();
+
+            $purchases = Purchase::query()
+                ->select('games.game_name', 'games.description', 'games.image_1', 'games.image_2', 'games.image_3', 'games.image_4', 'games.image_5')
+                ->join('purchased_game', 'purchased_game.purchase_id', '=', 'purchases.purchase_id')
+                ->join('games', 'purchased_game.game_id', '=', 'games.game_id')
+                ->where('user_id', '=', Session::get('user_id'))
+                ->orderBy('games.game_name', 'ASC')
+                ->get();
+
+            return view('my_library', compact('purchases', 'u'));
+        }
+    }
+
+    public function placePurchase(Request $request)
+    {
+        if (Session::has('user_id')) {
+            $u = User::query()
+                ->select('*')
+                ->where("user_id", "=", Session::get("user_id"))
+                ->get()
+                ->first();
+
+            $purchase = new Purchase;
+            $purchase->user_id = Session::get('user_id');
+            $purchase->save();
 
             $g = Game::query()
                 ->select('game_id', 'game_name', 'price', 'image_1')
