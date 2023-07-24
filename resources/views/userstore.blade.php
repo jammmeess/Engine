@@ -106,7 +106,7 @@
                     @foreach($game_list as $gl)
 
                     <div class="col-lg-4 col-11 ">
-                        <a href="/userstore/{{$gl ->game_id}}">
+                        <a class="category" href="/userstore/{{$gl ->game_id}}">
                             <div class="card-store pe-1 me-3 my-4">
                                 <div class="infos">
                                     <div class="image">
