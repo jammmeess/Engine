@@ -25,7 +25,7 @@ body {
     );
     background-repeat: repeat;
     height: auto;
-      color: #b3b3b3
+      color: #ffffff
 }
 
   h3, h2 {
@@ -1114,3 +1114,48 @@ box-shadow:  26px 26px 52px #231325,
         transform: scale(1.1); 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     }
+
+    /* Game Profile */
+    div#quad { 
+  background-color: #000; 
+  font-size: 0; width: 60%; 
+  margin: 0 auto;
+    box-shadow:  -5px 5px 10px #180f1a,
+             5px -5px 10px #623d66;
+}
+div#quad figure { 
+  margin: 0; width: 50%; 
+  height: auto; transition: 1s; 
+  display: inline-block; 
+  position: relative; overflow: hidden; 
+}
+div#quad figure:hover { cursor: pointer; z-index: 4; }
+div#quad figure img { width: 100%; height: auto; }
+div#quad figure:nth-child(1) { transform-origin: top left; }
+div#quad figure:nth-child(2) { transform-origin: top right; }
+div#quad figure:nth-child(3) { transform-origin: bottom left; }
+div#quad figure:nth-child(4) { transform-origin: bottom right; }
+div#quad figure figcaption { 
+  margin: 0; opacity: 0; 
+  background: rgba(0,0,0,0.3); 
+  color: #fff; padding: .3rem; 
+  font-size: 1.2rem; 
+  position: absolute; 
+  bottom: 0; width: 100%;
+	transition: 1s 1s opacity; 
+}
+.expanded { transform: scale(2); z-index: 5;  }
+div#quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+.overlay-game {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background-color: rgba(0, 0, 0, 0.6);
+   border-bottom-left-radius: 27px;
+   border-bottom-right-radius: 27px;
+    /* z-index: 100; */
+}
