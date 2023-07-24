@@ -106,35 +106,37 @@
                     @foreach($game_list as $gl)
 
                     <div class="col-lg-4 col-11 ">
-                        <div class="card-store pe-1 me-3 my-4">
-                            <div class="infos">
-                                <div class="image">
-                                    <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
-                                </div>
-                                <div class="info">
-                                    <div>
-                                        <p class="name">
-                                            {{$gl->game_name}}
-                                        </p>
-                                        <p class="function">
-                                            {{$gl->developer}}
-                                        </p>
+                        <a href="/userstore/{{$gl ->game_id}}">
+                            <div class="card-store pe-1 me-3 my-4">
+                                <div class="infos">
+                                    <div class="image">
+                                        <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
                                     </div>
-                                    <input type="hidden" min="1" max="1" style="width: 50px" class="purchase_{{$gl->game_id}}" name="purchase_{{$gl->game_id}}" value="0">
+                                    <div class="info">
+                                        <div>
+                                            <p class="name">
+                                                {{$gl->game_name}}
+                                            </p>
+                                            <p class="function">
+                                                {{$gl->developer}}
+                                            </p>
+                                        </div>
+                                        <input type="hidden" min="1" max="1" style="width: 50px" class="purchase_{{$gl->game_id}}" name="purchase_{{$gl->game_id}}" value="0">
 
+                                    </div>
                                 </div>
-                            </div>
-                            <p class="price my-3">
-                                <i>₱ {{$gl->price}}</i>
-                            </p>
-                            <a class="btn btn-primary add_button" id="{{$gl->game_id}}">Add to cart</a>
-                        </div>
+                                <p class="price my-3">
+                                    <i>₱ {{$gl->price}}</i>
+                                </p>
+                        </a>
+                        <a class="btn btn-primary add_button" id="{{$gl->game_id}}">Add to cart</a>
                     </div>
-                    @endforeach
                 </div>
-                {{$game_list->links('pagination::bootstrap-5')}}
-            </form>
+                @endforeach
         </div>
+        {{$game_list->links('pagination::bootstrap-5')}}
+        </form>
+    </div>
     </div>
     @include('layouts/footer')
 </body>
