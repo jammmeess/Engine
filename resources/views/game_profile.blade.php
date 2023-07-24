@@ -54,7 +54,7 @@
                 <p class="mb-3">{{$g->description}}</p>
                 <label>Category: </label>
                 <p class="mb-3">{{$g->category}}</p>
-                <a class="btn mb-3 d-none d-sm-block" href="/userstore">Back to Store</a>
+                <a class="btn mb-3" href="/userstore">Back to Store</a>
             </div>
         </div>
     </div>
