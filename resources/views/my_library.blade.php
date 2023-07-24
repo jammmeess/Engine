@@ -33,10 +33,10 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-7">
+                <div class="col-lg-7 d-none d-sm-block">
                     <div class="row">
                         @foreach ($purchases as $p)
-                        <div class="col-lg-4 my-3">
+                        <div class="col-lg-4 my-2">
                             <div class="card-library" style="width: 150px;">
                                 <a href="/my_library/{{$p ->game_id}}"> <img src="/img/games/{{$p->image_1}}" class="img-fluid card-img-top" alt="{{$p->game_name}}"></a>
                             </div>
