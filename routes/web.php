@@ -36,3 +36,6 @@ Route::post('/userstore/checkout', [GameController::class, 'placePurchase']);
 
 Route::get('/my_library', [GameController::class, 'showPurchases']);
 Route::get('/my_library/{id}', [GameController::class, 'showPurchasedGame']);
+
+Route::get('/store/{id}', [GameController::class, 'showGameLogin']);
+Route::get('/userstore/{id}', [GameController::class, 'showGameProfile']);
