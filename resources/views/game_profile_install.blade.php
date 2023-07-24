@@ -38,19 +38,19 @@
             <div class="col-lg-12 mb-5">
                 <div id="quad" class=" col-lg-7 d-flex flex-wrap">
                     <figure>
-                        <img src="/img/games/{{$g->image_3}}" alt="{{$g->game_name}}">
+                        <img src="{{$g->image_3}}" alt="{{$g->game_name}}">
                         <figcaption>{{$g->game_name}}</figcaption>
                     </figure>
                     <figure>
-                        <img src="/img/games/{{$g->image_4}}" alt="{{$g->game_name}}">
+                        <img src="{{$g->image_4}}" alt="{{$g->game_name}}">
                         <figcaption>{{$g->game_name}}</figcaption>
                     </figure>
                     <figure>
-                        <img src="/img/games/{{$g->image_5}}" alt="{{$g->game_name}}">
+                        <img src="{{$g->image_5}}" alt="{{$g->game_name}}">
                         <figcaption>{{$g->game_name}}</figcaption>
                     </figure>
                     <figure>
-                        <img src="/img/games/{{$g->image_6}}" alt="{{$g->game_name}}">
+                        <img src="{{$g->image_6}}" alt="{{$g->game_name}}">
                         <figcaption>{{$g->game_name}}</figcaption>
                     </figure>
                 </div>
