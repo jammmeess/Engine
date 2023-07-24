@@ -26,7 +26,7 @@
         </li>
         <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle text-light " href="#" role="button" data-bs-toggle="dropdown">
-            <img src="img/user_profiles/{{$u->image}}" style="width: 20px; height: 20px; border-radius: 28%; border: 1px solid white">
+            <!-- <img src="img/user_profiles/{{$u->image}}" style="width: 20px; height: 20px; border-radius: 28%; border: 1px solid white"> -->
             {{$u->username}}
           </a>
           <ul class="dropdown-menu" style="background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);">
