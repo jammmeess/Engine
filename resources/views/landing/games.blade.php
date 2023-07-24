@@ -6,7 +6,7 @@
             <!-- Normal Screen -->
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12 ps-5 pt-1  d-none d-sm-block fade-in-section">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="col-12  pt-2 d-block d-sm-none fade-in-section">
-                <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3500">
+                <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="2500">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
