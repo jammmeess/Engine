@@ -67,12 +67,12 @@
                 <div class="col-auto my-1">
                     <select class="btn custom-select mr-sm-2 ms-4 mb-3">
                         <option selected>Choose Your Payment Method...</option>
-                        <option value="Visa">Visa</option>
-                        <option value="MasterCard">MasterCard</option>
-                        <option value="Gcash">Gcash</option>
-                        <option value="Maya">Maya</option>
-                        <option value="Paypal">Paypal</option>
-                        <option value="Mobile-Bank">Mobile Bank <li>(BDO, BPI, etc.)</li>
+                        <option class="text-dark" value="Visa">Visa</option>
+                        <option class="text-dark" value="MasterCard">MasterCard</option>
+                        <option class="text-dark" value="Gcash">Gcash</option>
+                        <option class="text-dark" value="Maya">Maya</option>
+                        <option class="text-dark" value="Paypal">Paypal</option>
+                        <option class="text-dark" value="Mobile-Bank">Mobile Bank <li>(BDO, BPI, etc.)</li>
                         </option>
                     </select>
                 </div>
