@@ -73,32 +73,34 @@
 
             @foreach($game_list as $gl)
             <div class="col-lg-4  col-11">
-                <div class="card-store pe-2 me-3 my-4">
-                    <div class="infos">
-                        <div class="image">
-                            <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
-                        </div>
-                        <div class="info">
-                            <div>
-                                <p class="name">
-                                    {{$gl->game_name}}
-                                </p>
-                                <p class="function">
-                                    {{$gl->developer}}
-                                </p>
+                <a href="/store/{{$gl ->game_id}}">
+                    <div class="card-store pe-2 me-3 my-4">
+                        <div class="infos">
+                            <div class="image">
+                                <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <p class="name">
+                                        {{$gl->game_name}}
+                                    </p>
+                                    <p class="function">
+                                        {{$gl->developer}}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p class="price my-3">
-                        ₱{{$gl->price}}
-                    </p>
-                    <a class="btn mt-3" type="button" href="/login">
-                        Add to cart
-                    </a>
-                </div>
+                        <p class="price my-3">
+                            ₱{{$gl->price}}
+                        </p>
+                </a>
+                <a class="btn mt-3" type="button" href="/login">
+                    Add to cart
+                </a>
             </div>
-            @endforeach
         </div>
+        @endforeach
+    </div>
     </div>
     @include('layouts/footer')
 </body>
