@@ -16,25 +16,24 @@ class GameController extends Controller
 
     public function showGameLogin(string $id)
     {
-            $u = User::query()
-                ->select('username', 'image')
-                ->where("user_id", "=", Session::get("user_id"))
-                ->get()
-                ->first();
+        $u = User::query()
+            ->select('*')
+            ->where("user_id", "=", Session::get("user_id"))
+            ->get()
+            ->first();
 
-            $game = Game::query()
-                ->select('*')
-                ->where('game_id', '=', $id)
-                ->get();
-            return view('game_profile_login', compact('u', 'game'));
-       
+        $game = Game::query()
+            ->select('*')
+            ->where('game_id', '=', $id)
+            ->get();
+        return view('game_profile_login', compact('u', 'game'));
     }
 
     public function showGameProfile(string $id)
     {
         if (Session::has('user_id')) {
             $u = User::query()
-                ->select('username', 'image')
+                ->select('*')
                 ->where("user_id", "=", Session::get("user_id"))
                 ->get()
                 ->first();
@@ -53,7 +52,7 @@ class GameController extends Controller
     {
         if (Session::has('user_id')) {
             $u = User::query()
-                ->select('username', 'image')
+                ->select('*')
                 ->where("user_id", "=", Session::get("user_id"))
                 ->get()
                 ->first();
