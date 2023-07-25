@@ -2,7 +2,7 @@
 
 <head>
     @include("layouts/head")
-    
+
     <title>Profile</title>
 </head>
 
@@ -31,10 +31,10 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <h3 class="text-light text-center mt-5 pt-5">Games you own</h3>
             <div class="line mt-3"></div>
-        </div>
+        </div> -->
     </div>
 
 
