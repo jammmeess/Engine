@@ -479,8 +479,8 @@ body {
     width: 46%;
     /* border: 11px solid #6932f5; */
     border-radius: 28px;
-box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;
+    border:3px solid black;
+
 }
 
 .about-content {
@@ -526,34 +526,23 @@ background-color: transparent !important;
 
 /* Carousel */
 .carousel-inner {
-   /* border: 11px solid #6932f5; */
    width: 700px;
     border-radius: 28px;
-box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;
+ border:3px solid black;
 }
 
 /* Cards */
   .custom-card {
-    /* height: 80%; */
     font-size: 20px;
     margin-top: 20px;
     border-radius: 28px;
-    box-shadow:  -5px 5px 10px #180f1a,
-             5px -5px 10px #623d66;
+     border: 3px solid black;
     transition: transform 0.3s ease;
 }
 
 .custom-card:hover {
     transform: scale(1.05);
 }
-
-/* .custom-card .card-body {
-    height: auto;
-    width: 100%;
-    font-family: "Helmet";
-    border-radius: 50px;
-} */
 
 /* Footer */
 
@@ -732,10 +721,9 @@ box-shadow:  26px 26px 52px #231325,
 #login-bg {
   background-color:  linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);;
   border-radius: 28px; 
+  border: 3px solid white;
   width: 120%;
   height: 70%;
-  box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;;
 }
 
 /* Register */
@@ -743,19 +731,17 @@ box-shadow:  26px 26px 52px #231325,
 #reg-bg {
   background-color:  linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   border-radius: 28px; 
+  border: 3px solid white;
   width: 70%;
   height: 105%;
-  box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;
 }
 
 #reg-bg-responsive {
   background-color:  linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   border-radius: 28px; 
+    border: 3px solid white;
   width: 85%;
   height: 130%;
-  box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;
 }
 
 /*Success  */
@@ -789,8 +775,7 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 .accordion-item {
-    box-shadow:  -5px 5px 10px #180f1a,
-             5px -5px 10px #623d66;
+    border: 3px solid black;
    color: black;
 }
 
@@ -838,20 +823,16 @@ box-shadow:  26px 26px 52px #231325,
       width: 200px; 
       height: 200px;
       object-fit: cover;
-      /* border: 5px solid #6932f5; */
       border-radius: 28px;
-      box-shadow:  -5px 5px 10px #180f1a,
-             5px -5px 10px #623d66;
+      border: 3px solid white;
 }
 
 #display-photo-responsive{
       width: 300px; 
       height: 300px;
       object-fit: cover;
-      /* border: 5px solid #6932f5; */
       border-radius: 28px;
-      box-shadow:  -5px 5px 10px #180f1a,
-             5px -5px 10px #623d66;
+       border: 3px solid white;
 }
 
 /* Store Cards */
@@ -937,14 +918,13 @@ box-shadow:  26px 26px 52px #231325,
 }
 
 .card-store {
-  width: 95%;
+  width: 105%;
   height:70%;
   border-radius: 1rem;
+  border: 2px solid black;
   margin-right: 40px;
  background: rgb(26, 25, 25);
-  padding: 1rem;
-  box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b;
+  padding: 15px;
 }
 
 .card-store:hover {
@@ -1101,8 +1081,8 @@ box-shadow:  26px 26px 52px #231325,
     .card-library {
         width: 150px;
         border-radius: 28px;
-   box-shadow:  -5px 5px 10px #180f1a,
-             5px -5px 10px #623d66;
+        border:2px solid black
+        
     }
 
     .card-img-top{
