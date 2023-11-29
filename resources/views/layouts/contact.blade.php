@@ -7,21 +7,21 @@
         <div class="col-lg-5 col-12 mt-2 pt-2">
             <form>
                 <div class="form-group pt-3 row">
-                    <label for="enter_name" class="col-sm-2 col-form-label" placeholder="ex. Juan Dela Cruz">Name:</label>
+                    <label for="enter_name" class="col-sm-2 col-form-label me-3" placeholder="ex. Juan Dela Cruz">Name:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="enter_name" />
                     </div>
                 </div>
 
                 <div class="form-group pt-3 row">
-                    <label for="contact_number" class="col-sm-2 col-form-label" placeholder="ex. 09123456789">Contact Number:</label>
+                    <label for="contact_number" class="col-sm-2 col-form-label me-3" placeholder="ex. 09123456789">Contact Number:</label>
                     <div class="col-sm-10">
                         <input type="Number" class="form-control" id="contact_number" />
                     </div>
                 </div>
 
                 <div class="form-group pt-3 row">
-                    <label for="message" class="col-sm-2 col-form-label" placeholder="Type your message here...">Message:</label>
+                    <label for="message" class="col-sm-2 col-form-label me-3" placeholder="Type your message here...">Message:</label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="message" />
                     </div>
