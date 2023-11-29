@@ -37,9 +37,9 @@ class UserController extends Controller
         $user->first_name = $request->input('first_name');
         $user->last_name = $request->input('last_name');
         $user->birthday = $request->input('birthday');
-        // $user->phone_number = $request->input('phone_number');
         $user->password = bcrypt($request->input('password'));
         $user->role = "user";
+        $user->image = "primary.jpg";
         $user->save();
 
         return redirect('/register/success');
