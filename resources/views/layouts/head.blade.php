@@ -9,3 +9,5 @@
 <link rel="stylesheet" href="/css/styles.scss" />
 <script src="{{ asset('js/navbar.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
