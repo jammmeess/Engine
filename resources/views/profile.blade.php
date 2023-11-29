@@ -69,11 +69,11 @@
     <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header text-dark">
                     <h5 class="modal-title" id="uploadModalLabel">Change your profile picture</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-secondary">
                     <form action="/profile/{{$u -> user_id}}/upload_photo" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
