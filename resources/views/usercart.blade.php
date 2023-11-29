@@ -86,8 +86,7 @@
     <div class="row ms-3 mb-5">
         <h5 class="text-light ms-3 mt-3mb-3">Delivery: </h5>
         <div class="col-lg-6 col-10 ms-3 d-flex" style="background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);  border-radius: 10px;
-             box-shadow:  -7px 7px 16px #0e080f,
-             7px -7px 16px #381e3b; padding: 15px;">
+             border: 3px solid black; padding: 15px;">
             <img src=" /img/logo/logo_white.png" width="50px" class="img-fluid" alt="Engine_ Logo" />
             <p class="text-light ms-3">All games are available for download upon purchase in your personal Engine_ library.</p>
         </div>
