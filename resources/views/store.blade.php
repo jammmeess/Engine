@@ -77,7 +77,7 @@
                     <div class="card-store pe-2 me-3 my-4">
                         <div class="infos">
                             <div class="image">
-                                <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}">
+                                <img src="img/games/{{$gl->image_1}}" class="card-img-top-game" alt="{{$gl->game_name}}" style="border: 3px solid black">
                             </div>
                             <div class="info">
                                 <div>
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="price my-3">
+                        <p class="price my-3 text-success" style="font-style: italic;">
                             ₱{{$gl->price}}
                         </p>
                 </a>
