@@ -25,7 +25,7 @@ Route::get('/support/forgot_password', [UserController::class, 'showForgotpw']);
 Route::get('/usersupport', [UserController::class, 'showUserSupport']);
 
 Route::get('/profile', [UserController::class, 'showProfile']);
-Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoProfile']);
+Route::put('/profile/{id}/upload_photo', [UserController::class, 'uploadPhotoProfile']); 
 
 Route::get('/store', [GameController::class, 'showStore']);
 
